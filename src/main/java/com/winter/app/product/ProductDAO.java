@@ -51,7 +51,7 @@ public class ProductDAO {
 	
 	public ArrayList<ProductDTO> list() throws Exception{
 		Connection con = DBConnector.getConnector();
-		String sql = "SELET * FROM PRODUCT";
+		String sql = "SELECT * FROM PRODUCT";
 		PreparedStatement st = con.prepareStatement(sql);
 		
 		ResultSet rs = st.executeQuery();
